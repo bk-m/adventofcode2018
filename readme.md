@@ -4,9 +4,9 @@ Just for fun.
 
 ---
 
-| **Day**    | **Name**                                                   | **Languages**    |
-|:----------:|:-----------------------------------------------------------|:----------------:|
-| 01         | [Chronal Calibration](https://adventofcode.com/2018/day/1) | ![Python][py]    |
+| **Day**    | **Name**                                                   | **Languages**    | **Solution Megathread**    |
+|:----------:|:-----------------------------------------------------------|:----------------:|:---------------------------|
+| 01         | [Chronal Calibration](https://adventofcode.com/2018/day/1) | ![Python][py]    | [Reddit](https://www.reddit.com/r/adventofcode/comments/a20646/2018_day_1_solutions/) |
 | 02         | [PLACEHOLDER](https://adventofcode.com/2018/day/2)         | ![Python][py]    |
 | 03         | [PLACEHOLDER](https://adventofcode.com/2018/day/3)         | ![Python][py]    |
 | 04         | [PLACEHOLDER](https://adventofcode.com/2018/day/4)         | ![Python][py]    |
