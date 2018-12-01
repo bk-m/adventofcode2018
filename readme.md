@@ -2,6 +2,8 @@
 
 Just for fun.
 
+---
+
 | **Day**    | **Name**                                                   | **Languages**    |
 |:----------:|:-----------------------------------------------------------|:----------------:|
 | 01         | [Chronal Calibration](https://adventofcode.com/2018/day/1) | ![Python][py]    |
