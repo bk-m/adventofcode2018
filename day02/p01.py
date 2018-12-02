@@ -7,7 +7,6 @@ def get_input(filename):
         return f.readlines()
 
 def get_multiples(data, count):
-#     return sum([1 for entry in data if any(letter_count == count for letter_count in Counter(entry).values())])
     return sum([1 for entry in data if count in Counter(entry).values()])
 
 if __name__ == "__main__":
