@@ -15,7 +15,7 @@ class Fabric():
         self.width = width
         self.height = height
         self.grid = [[-1] * width for _ in range(height)]
-    
+
     def match_piece(self, piece):
         for idy, row in enumerate(self.grid[piece.y:piece.y + piece.height]):
             for idx, _ in enumerate(row[piece.x:piece.x + piece.width]):

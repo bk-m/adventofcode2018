@@ -15,7 +15,7 @@ class Fabric():
         self.width = width
         self.height = height
         self.grid = [[-1] * width for _ in range(height)]
-    
+
     def match_piece(self, piece):
         for idy, row in enumerate(self.grid[piece.y:piece.y + piece.height]):
             for idx, _ in enumerate(row[piece.x:piece.x + piece.width]):
@@ -27,7 +27,7 @@ class Fabric():
                     self.grid[tmp_y][tmp_x] = 1
                 else:
                     continue
-    
+
     def get_overlap(self):
         return sum([sum([1 for col in row if col == 1]) for row in self.grid])
 
@@ -72,7 +72,7 @@ def main():
 
     for item in parsed_data:
         fabric.match_piece(item)
-    
+
     print(fabric.get_overlap())
 
 if __name__ == "__main__":
