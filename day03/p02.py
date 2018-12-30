@@ -25,18 +25,15 @@ class Fabric():
                     self.grid[tmp_y][tmp_x] = 0
                 elif self.grid[tmp_y][tmp_x] == 0:
                     self.grid[tmp_y][tmp_x] = 1
-                else:
-                    continue
 
     def piece_overlaps(self, piece):
         for row in self.grid[piece.y:piece.y + piece.height]:
-            for col in row[piece.x:piece.x + piece.width]:
-                if col == 1:
-                    return True
+            if 1 in row[piece.x:piece.x + piece.width]:
+                return True
         return False
 
     def get_overlapping_sqr_inches(self):
-        return sum([sum([1 for col in row if col == 1]) for row in self.grid])
+        return sum([sum([col for col in row if col == 1]) for row in self.grid])
 
 class PieceOfFabric():
     def __init__(self):
@@ -88,8 +85,8 @@ def main():
 
     assert len(overlapping) == 1
 
-    print('Overlapping area: ' + str(fabric.get_overlapping_sqr_inches()))
-    print('Non-overlapping item ID: ' + str(overlapping[0].id))
+    print('Overlapping area: {}'.format(fabric.get_overlapping_sqr_inches()))
+    print('Non-overlapping item ID: {}'.format(overlapping[0].id))
 
 if __name__ == "__main__":
     main()
